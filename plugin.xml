@@ -20,4 +20,20 @@
         </config-file>
         <source-file src="src/wp8/W3WVideoLauncher.cs" />
     </platform>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CDVVideo">
+                <param name="ios-package" value="CDVVideo"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/ios/CDVVideo.m" />
+        <source-file src="src/ios/MovieViewController.m" />
+
+        <header-file src="src/ios/CDVVideo.h" />
+        <header-file src="src/ios/MovieViewController.h" />
+
+        <framework src="MediaPlayer.framework" />
+    </platform>
 </plugin>
