@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cz.w3w.cordova.videolauncher" version="0.0.1">
+    <name>Device</name>
+    <description>w3w.cz Cordova Video Player Launcher</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,video,launcher,mp4</keywords>
+    <repo>https://github.com/w3w/cz.w3w.cordova.videolauncher.git</repo>
+    <issue>https://github.com/w3w/cz.w3w.cordova.videolauncher/issues</issue>
+
+    <js-module src="www/VideoLauncher.js" name="VideoLauncher">
+        <clobbers target="plugins.VideoLauncher" />
+    </js-module>
+
+    <platform name="wp8">
+        <config-file target="config.xml" parent="/*">
+            <feature name="VideoLauncher">
+                <param name="wp-package" value="W3WVideoLauncher" />
+            </feature>
+        </config-file>
+        <source-file src="src/wp8/W3WVideoLauncher.cs" />
+    </platform>
+</plugin>
