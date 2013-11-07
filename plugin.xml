@@ -23,15 +23,15 @@
 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="CDVVideo">
-                <param name="ios-package" value="CDVVideo"/>
+            <feature name="VideoLauncher">
+                <param name="ios-package" value="W3WVideoLauncher"/>
             </feature>
         </config-file>
 
-        <source-file src="src/ios/CDVVideo.m" />
+        <source-file src="src/ios/W3WVideoLauncher.m" />
         <source-file src="src/ios/MovieViewController.m" />
 
-        <header-file src="src/ios/CDVVideo.h" />
+        <header-file src="src/ios/W3WVideoLauncher.h" />
         <header-file src="src/ios/MovieViewController.h" />
 
         <framework src="MediaPlayer.framework" />

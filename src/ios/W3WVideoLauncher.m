@@ -1,5 +1,5 @@
 //
-//  CDVVideo.m
+//  W3WVideoLauncher.m
 //  
 //
 //  Updated by Tom Krones 2013-09-30.
@@ -7,14 +7,14 @@
 //
 //
 
-#import "CDVVideo.h"
+#import "W3WVideoLauncher.h"
 #import "MediaPlayer/MPMoviePlayerViewController.h"
 #import "MediaPlayer/MPMoviePlayerController.h"
 #import "MovieViewController.h"
 #import <Cordova/CDV.h>
 
-@implementation CDVVideo
-- (void) play:(CDVInvokedUrlCommand*)command
+@implementation W3WVideoLauncher
+- (void) launch:(CDVInvokedUrlCommand*)command
 {
   movies_idx = 0;
   movies = [[command.arguments objectAtIndex:0] componentsSeparatedByString:@" "];
@@ -69,7 +69,7 @@
                                                     name:MPMoviePlayerPlaybackDidFinishNotification
                                                   object:moviePlayer];
     [self.viewController dismissMoviePlayerViewControllerAnimated];
-    [self writeJavascript:[NSString stringWithFormat:@"window.plugins.CDVVideo.finished(\"%@\");", @""]];
+    [self writeJavascript:[NSString stringWithFormat:@"window.plugins.VideoLauncher.finished(\"%@\");", @""]];
   }
 }
 

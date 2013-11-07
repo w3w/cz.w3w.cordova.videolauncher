@@ -1,5 +1,5 @@
 //
-//  CDVVideo.h
+//  W3WVideoLauncher.h
 //  
 //
 //  Updated by Tom Krones 2013-09-30.
@@ -10,12 +10,12 @@
 #import <Cordova/CDV.h>
 #import "MovieViewController.h"
 
-@interface CDVVideo : CDVPlugin {
+@interface W3WVideoLauncher : CDVPlugin {
   MovieViewController *player;
   NSArray *movies;
   int movies_idx;
 }
 
-- (void) play:(CDVInvokedUrlCommand*)command;
+- (void) launch:(CDVInvokedUrlCommand*)command;
 
 @end
