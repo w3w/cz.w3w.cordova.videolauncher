@@ -21,7 +21,7 @@
   if ([movies count] == 0)
     return;
   NSString *movie = [movies objectAtIndex:0];
-  NSString *orient = [command.arguments objectAtIndex:1];
+  NSString *orient = @"YES";
   NSRange range = [movie rangeOfString:@"http"];
   if(range.length > 0) {
     if ([@"YES" isEqualToString:orient]) {
