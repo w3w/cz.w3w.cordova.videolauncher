@@ -10,7 +10,7 @@ using WPCordovaClassLib.Cordova.JSON;
 
 namespace Cordova.Extension.Commands
 {
-    class W3WVideoLauncher : BaseCommand
+    class VideoLauncher : BaseCommand
     {
         public void launch(string options)
         {

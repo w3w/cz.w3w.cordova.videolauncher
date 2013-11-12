@@ -15,10 +15,10 @@
     <platform name="wp8">
         <config-file target="config.xml" parent="/*">
             <feature name="VideoLauncher">
-                <param name="wp-package" value="W3WVideoLauncher" />
+                <param name="wp-package" value="VideoLauncher" />
             </feature>
         </config-file>
-        <source-file src="src/wp8/W3WVideoLauncher.cs" />
+        <source-file src="src/wp8/VideoLauncher.cs" />
     </platform>
 
     <platform name="ios">
