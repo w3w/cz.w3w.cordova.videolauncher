@@ -69,7 +69,6 @@
                                                     name:MPMoviePlayerPlaybackDidFinishNotification
                                                   object:moviePlayer];
     [self.viewController dismissMoviePlayerViewControllerAnimated];
-    [self writeJavascript:[NSString stringWithFormat:@"window.plugins.VideoLauncher.finished(\"%@\");", @""]];
   }
 }
 
