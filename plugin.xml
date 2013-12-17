@@ -36,4 +36,14 @@
 
         <framework src="MediaPlayer.framework" />
     </platform>
+	
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="VideoLauncher">
+                <param name="android-package" value="cz.w3w.cordova.plugin.videolauncher.W3WVideoLauncher"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/W3WVideoLauncher.java" target-dir="src/cz/w3w/cordova/plugin/videolauncher" />
+    </platform>
+	
 </plugin>
