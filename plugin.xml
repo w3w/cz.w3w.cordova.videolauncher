@@ -40,10 +40,10 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="VideoLauncher">
-                <param name="android-package" value="cz.w3w.cordova.plugin.videolauncher.W3WVideoLauncher"/>
+                <param name="android-package" value="cz.w3w.cordova.plugin.videolauncher.VideoLauncher"/>
             </feature>
         </config-file>
-        <source-file src="src/android/W3WVideoLauncher.java" target-dir="src/cz/w3w/cordova/plugin/videolauncher" />
+        <source-file src="src/android/VideoLauncher.java" target-dir="src/cz/w3w/cordova/plugin/videolauncher" />
     </platform>
 	
 </plugin>

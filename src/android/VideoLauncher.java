@@ -11,7 +11,7 @@ import android.net.Uri;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 
-public class W3WVideoLauncher extends CordovaPlugin {
+public class VideoLauncher extends CordovaPlugin {
 	
 	private CallbackContext callbackContext;
 
