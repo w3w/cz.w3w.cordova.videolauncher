@@ -9,7 +9,7 @@
     <issue>https://github.com/w3w/cz.w3w.cordova.videolauncher/issues</issue>
 
     <js-module src="www/VideoLauncher.js" name="VideoLauncher">
-        <clobbers target="plugins.VideoLauncher" />
+        <clobbers target="VideoLauncher" />
     </js-module>
 
     <platform name="wp8">
